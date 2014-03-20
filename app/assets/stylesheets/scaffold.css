@@ -279,3 +279,11 @@ input[type="file"] input{
   border-radius:10px; 
   padding: 5px;
 }
+
+.flex-direction-nav .flex-prev{
+ background-image:url('images/arrow_left.png');
+}
+
+.flex-direction-nav .flex-next{
+ background-image:url('images/arrow_right.png');
+}

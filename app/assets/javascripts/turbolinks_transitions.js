@@ -14,8 +14,8 @@ document.addEventListener('page:change', function() {
   });
 });
 
-document.addEventListener('page:before-change', function() {
-        document.getElementById('primary-content').className += 'animated slideInLeft';
+document.addEventListener('page:load', function() {
+        document.getElementById('primary-content').className += 'animated fadeInDown';
         $('.flexslider').flexslider({
     animation: "slide",
     animationLoop: true,

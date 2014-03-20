@@ -1,0 +1,36 @@
+<div id="primary-content" >
+<%= form_for(@filmy) do |f| %>
+  <% if @filmy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@filmy.errors.count, "error") %> prohibited this filmy from being saved:</h2>
+
+      <ul>
+      <% @filmy.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="field">
+    <%= f.label 'Dodaj obrazek' %><br>
+     <%= f.file_field :obrazki %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nazwa %><br>
+    <%= f.text_field :nazwa, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :gatunek %><br>
+    <%= f.select :gatunek, ['Akcja','Dramat','Dokument','Komedia','Horror','Sci-Fi','Thriller']%>
+  </div>
+  <div class="field">
+    <%= f.label :rok%><br>
+    <%= f.number_field :rok, min: 0, max: Time.now.year, required: true  %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Zapisz'%>
+  </div>
+<% end %>
+</div>

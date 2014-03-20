@@ -1,0 +1,37 @@
+<h1>Lista filmów</h1>
+
+<div class="menu">
+  <%= link_to 'Dodaj film', new_filmy_path %>
+</div>
+
+<div class="content">
+<div class="flexslider">
+  <ul class="slides">
+        <% @filmies.each do |filmy| %>
+    <li class="slide">
+      <a href="/filmies/<%= filmy.id %>">
+         <% if filmy.obrazki? %>
+            <%= image_tag filmy.obrazki_url(:thumb) %>
+        <% else %>
+          <img alt="Thumb images" src="noimg.png" draggable="false">
+        <% end %>
+        <p>
+          <%= filmy.nazwa %>
+        </p>
+       <p>
+          <%= filmy.gatunek %>
+        </p>
+
+        <p>
+          <%= filmy.rok %>
+        </p>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</div>
+</div>
+<br>
+<div class="footer">
+<p> Wykonanie Jacek Sikora </p>
+</div>

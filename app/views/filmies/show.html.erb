@@ -1,22 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <div  class="content-edit">
-  <%= image_tag @filmy.obrazki_url(:shown) if @filmy.obrazki? %>
+  <%= image_tag @filmy.obrazki_url() if @filmy.obrazki? %>
 
-  <p>
-    <strong>Nazwa:</strong>
+ 
+    <strong>Nazwa</strong>
     <%= @filmy.nazwa %>
-  </p>
-
-  <p>
-    <strong>Gatunek:</strong>
+    </br>
+    </br>
+    <strong>Gatunek</strong>
     <%= @filmy.gatunek %>
-  </p>
-
-  <p>
-    <strong>Rok:</strong>
+    </br>
+    </br>
+    <strong>Rok</strong>
     <%= @filmy.rok %>
-  </p>
 
   <div class="reference">
     <%= link_to 'Usuń', @filmy, method: :delete, data: { confirm: 'Jestes pewny?' } %>

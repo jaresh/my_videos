@@ -27,10 +27,10 @@ class ObrazkiUploader < CarrierWave::Uploader::Base
 
   # Process files as they are uploaded:
   # process :scale => [200, 200]
-  version :shown do
+ # version :shown do
   #process :resize_and_pad => [160, 160,background='black', Magick::CenterGravity]
     process :resize_to_fit => [300,300]
-   end
+  # end
 
  version :thumb do
     process :resize_to_fill => [160,160]

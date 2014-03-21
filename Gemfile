@@ -22,7 +22,6 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-gem 'pg', '0.15.1'
 gem 'redcarpet'
 gem 'quiet_assets'
 gem 'carrierwave'

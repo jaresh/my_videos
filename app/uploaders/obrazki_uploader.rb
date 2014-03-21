@@ -29,7 +29,7 @@ class ObrazkiUploader < CarrierWave::Uploader::Base
   # process :scale => [200, 200]
  # version :shown do
   #process :resize_and_pad => [160, 160,background='black', Magick::CenterGravity]
-    process :resize_to_fit => [300,300]
+    process :resize_to_fit => [500,500]
   # end
 
  version :thumb do

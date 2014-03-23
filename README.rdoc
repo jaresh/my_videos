@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplikacja biblioteki filmowej.
 
-Things you may want to cover:
+== Gems
 
-* Ruby version
+gem 'turbolinks' - płynne przejścia pomiedzy stronami
+gem 'carrierwave' - obsluga plików
+gem 'rmagick' - obróbka zdjęć 
+gem 'flexslider' - wyświetlanie karuzeli z filmami
+gem 'fog' - połączenie bazy danych z plikami na Google Storage 
 
-* System dependencies
+== Link
 
-* Configuration
+Aplikacja została wdrożona na Heroku :
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+http://jsvideos.herokuapp.com/

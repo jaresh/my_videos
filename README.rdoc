@@ -4,11 +4,15 @@ Aplikacja biblioteki filmowej.
 
 == Gems
 
-gem 'turbolinks' - płynne przejścia pomiedzy stronami
-gem 'carrierwave' - obsluga plików
-gem 'rmagick' - obróbka zdjęć 
-gem 'flexslider' - wyświetlanie karuzeli z filmami
-gem 'fog' - połączenie bazy danych z plikami na Google Storage 
+gem 'turbolinks' (+ Aniamte.css) - płynne przejścia pomiedzy stronami,
+
+gem 'carrierwave' - obsluga plików,
+
+gem 'rmagick' - obróbka zdjęć,
+
+gem 'flexslider' - wyświetlanie karuzeli z filmami,
+
+gem 'fog' - połączenie bazy danych z plikami na Google Storage, 
 
 == Link
 

@@ -7,7 +7,7 @@
 <div class="content">
 <div class="flexslider">
   <ul class="slides">
-        <% @filmies.each do |filmy| %>
+        <% @filmies.sort_by{|filmy| filmy.nazwa}.each do |filmy| %>
     <li class="slide">
       <a href="/filmies/<%= filmy.id %>">
          <% if filmy.obrazki? %>

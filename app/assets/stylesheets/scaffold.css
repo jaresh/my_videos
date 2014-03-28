@@ -1,4 +1,4 @@
-@media all and (min-width: 520px) {
+@media all and (min-width: 510px) {
 body { 
   background-color: #707070 ; 
   color: black; 
@@ -282,7 +282,7 @@ input[type="file"] input{
   padding: 5px;
 }
 }
-@media all and (max-width: 520px) and (min-width: 1px) {
+@media all and (max-width: 510px) and (min-width: 1px) {
   body { 
   background-color: #707070 ; 
   color: black; 
@@ -469,7 +469,7 @@ opacity:0.8;
 }
 
 .info{
-  width:150px;
+  width:80px;
     color:white;
     padding: 5px 5px;
     overflow:hidden;

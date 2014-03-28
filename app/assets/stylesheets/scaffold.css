@@ -1,4 +1,4 @@
-@media all and (min-width: 480px) {
+@media all and (min-width: 520px) {
 body { 
   background-color: #707070 ; 
   color: black; 
@@ -282,7 +282,7 @@ input[type="file"] input{
   padding: 5px;
 }
 }
-@media all and (max-width: 480px) and (min-width: 1px) {
+@media all and (max-width: 520px) and (min-width: 1px) {
   body { 
   background-color: #707070 ; 
   color: black; 
